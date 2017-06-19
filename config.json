@@ -1,0 +1,78 @@
+{
+    "slack": {
+        "token": " ",
+        "bot_id": "U...",
+        "bot_name": "my_bot",
+        "channel": "#servers",
+        "master_id": "U...",
+        "master": "charlton",
+        "authorized_user_ids":[]
+    },
+    "character_blacklist": "|&;#$^`",
+    "commands": {
+        "hello": {
+            "method": "sayHello",
+            "help": "says hello"
+        },
+        "dig": {
+            "method": "dig",
+            "help": "performs a DNS lookup and prints the results"
+        },
+        "ping": {
+            "method": "ping",
+            "help": "pings a domain and prints the results"
+        },
+        "syslog": {
+            "method": "syslog",
+            "help": "prints the latest entries in the syslog"
+        },
+        "authlog": {
+            "method": "authlog",
+            "help": "prints the latest entries in auth.log"
+        },
+        "ifconfig": {
+            "method": "ifconfig",
+            "help": "prints information about the status of network interfaces"
+        },
+        "lsof": {
+            "method": "lsof",
+            "help": "prints the output of `lsof -i`"
+        },
+        "sysinfo": {
+            "method": "sysinfo",
+            "help": "prints useful system information"
+        },
+        "df": {
+            "method": "diskStatus",
+            "help": "prints information about attached disks and their usage"
+        },
+        "uptime": {
+            "method": "getUptime",
+            "help": "prints system uptime"
+        },
+        "hostname": {
+            "method": "getHostname",
+            "help": "prints the system hostname"
+        },
+        "reboot": {
+            "method": "reboot",
+            "help": "schedules a reboot in 2 minutes"
+        },
+        "undoreboot": {
+            "method": "undoReboot",
+            "help": "cancels the scheduled reboot"
+        },
+        "help": {
+            "method": "getHelp",
+            "help": "returns information about a command. Use `list` for a list of available commands."
+        },
+        "list": {
+            "method": "listCommands",
+            "help": "prints a list of available commands"
+        },
+        "kill_client": {
+            "method": "killClient",
+            "help": "stops the IRC client"
+        }
+    }
+}
